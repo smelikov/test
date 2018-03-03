@@ -6,7 +6,8 @@ node {
         
     }
    stage('Deploy') {
-      // Run the maven build
+      // Run deploy
+        checkout scm
         sh 'sudo pwd'
         sh 'sudo mv ./index /var/www/html/index.html'
       } 
