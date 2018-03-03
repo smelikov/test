@@ -13,6 +13,7 @@ node {
       } 
        
     stage('Upload_to_websrv') {
+        
       
   }
    }
