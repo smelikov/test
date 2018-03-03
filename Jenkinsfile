@@ -12,6 +12,8 @@ node {
         sh 'sudo mv ./index.html /var/www/html/index.html'
       } 
     stage('Upload_to_websrv') {
+      job('example') {
+      steps {
          publishOverSsh {
             server('172.31.45.233) {
                 transferSet {
@@ -19,7 +21,8 @@ node {
                 }
             }
         }
-
+    }
+  }
    }
    stage('Results') {
       echo "URA!"
