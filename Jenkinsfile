@@ -11,8 +11,7 @@ node {
         sh 'sudo pwd'
         sh 'sudo mv ./index.html /var/www/html/index.html'
       } 
-    stage('Upload_to_websrv') {
-      job('example') {
+  job('example') {
       steps {
          publishOverSsh {
             server('172.31.45.233') {
@@ -22,6 +21,9 @@ node {
             }
         }
     }
+      
+    stage('Upload_to_websrv') {
+      
   }
    }
    stage('Results') {
