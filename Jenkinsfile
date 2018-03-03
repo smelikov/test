@@ -9,7 +9,7 @@ node {
       // Run deploy
         checkout scm
         sh 'sudo pwd'
-        sh 'sudo mv ./index.html /builds/index.html'
+        sh 'sudo cp ./index.html /builds/index.html'
       } 
        
     stage('Upload_to_websrv') {
