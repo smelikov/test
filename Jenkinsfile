@@ -8,9 +8,9 @@ node {
    stage('Deploy_local') {
       // Run deploy
         checkout scm
+        sh 'sudo cp ./index.html ../upload_ssh/index.html'
         sh 'sudo pwd'
-        sh 'sudo cp ./index.html /builds/index.html'
-      } 
+   } 
        
     stage('Upload_to_websrv') {
         
