@@ -19,4 +19,3 @@ node {
    stage('Results') {
       echo "URA!"
    }
-}
