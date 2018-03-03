@@ -15,7 +15,7 @@ node {
       job('example') {
       steps {
          publishOverSsh {
-            server('172.31.45.233) {
+            server('172.31.45.233') {
                 transferSet {
                     sourceFiles('index.html')
                 }
