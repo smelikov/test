@@ -16,10 +16,10 @@ node {
         
             steps {
                 script {
-                    build(job: "upload_ssh",
+                    build(job: "upload_ssh")
+                }
                                        
-            }
-        }
+           }
       
   }
    }
