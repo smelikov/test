@@ -8,11 +8,11 @@ node {
    stage('Deploy_local') {
       // Run deploy
         checkout scm
-        sh 'sudo cp ./index.html ../upload_ssh/index.html'
-        sh 'sudo pwd'
+        sh 'sudo cp ./index.html /var/www/html/index.html'
    } 
        
     stage('Upload_to_websrv') {
+        sh 'sudo cp ./index.html ../upload_ssh/index.html'
         build job: 'upload_ssh'    
   }
    }
