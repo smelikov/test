@@ -13,7 +13,7 @@ node {
    } 
        
     stage('Upload_to_websrv') {
-        build job: 'upload_ssh    
+        build job: 'upload_ssh'    
   }
    }
    stage('Results') {
