@@ -15,11 +15,10 @@ node {
     stage('Upload_to_websrv') {
         
             steps {
-                script {
-                    build(job: "upload_ssh")
+                build job: 'upload_ssh'
                 }
                                        
-           }
+          
       
   }
    }
